@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Discipline System 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #030303;
+            --card-bg: #0a0a0a;
+            --accent: #ffffff;
+            --text-main: #f5f5f7;
+            --text-dim: #86868b;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+        /* Navigation */
+        nav {
+            padding: 32px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-weight: 700; letter-spacing: -1px; font-size: 1.1rem; }
+
+        /* Hero */
+        .hero { padding: 80px 0 60px; text-align: center; }
+        .badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 100px;
+            font-size: 11px;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 24px;
+            display: inline-block;
+        }
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4.2rem);
+            font-weight: 700;
+            letter-spacing: -3px;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-dim);
+            max-width: 580px;
+            margin: 0 auto 40px;
+        }
+
+        /* Buttons */
+        .btn {
+            background: var(--accent);
+            color: black;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+        }
+
+        /* Bento Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 16px;
+            margin-bottom: 80px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 24px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+        .card p { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 16px; }
+
+        .span-3 { grid-column: span 3; }
+        .span-6 { grid-column: span 6; }
+
+        .img-container {
+            width: 100%;
+            background: #000;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            margin-top: auto;
+        }
+        .img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .card:hover img { opacity: 1; }
+
+        /* Pricing */
+        .pricing {
+            background: radial-gradient(circle at top, #111 0%, #030303 100%);
+            padding: 80px 32px;
+            border-radius: 32px;
+            border: 1px solid var(--border);
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .price { font-size: 5rem; font-weight: 700; margin: 10px 0; letter-spacing: -4px; }
+        .price span { font-size: 1.2rem; color: var(--text-dim); letter-spacing: 0; }
+
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .span-3, .span-6 { grid-column: span 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">SELF DISCIPLINE SYSTEM 2026</div>
+            <a href="mailto:vivekvarma123real@gmail.com" style="color:var(--text-dim); text-decoration:none; font-size:0.85rem;">Support</a>
+        </nav>
+
+        <section class="hero">
+            <div class="badge">Consistency Over Motivation</div>
+            <h1>Build Self-Discipline</h1>
+            <p>The aesthetic Goal Planner and Habit Tracker. Engineered for those who want to own their 2026.</p>
+            <a href="#buy" class="btn">Get the System</a>
+        </section>
+
+        <div class="grid">
+            <div class="card span-3">
+                <h3>Goal Planner 2026</h3>
+                <p>Strategic framework to map your vision.</p>
+                <div class="img-container">
+                    <img src="image.png" alt="Goal Planner">
+                </div>
+            </div>
+
+            <div class="card span-3">
+                <h3>Habit Tracker</h3>
+                <p>Automated daily accountability tracker.</p>
+                <div class="img-container">
+                    <img src="habit.jpeg" alt="Habit Tracker">
+                </div>
+            </div>
+
+            <div class="card span-6" style="flex-direction: row; align-items: center; justify-content: space-between; gap: 20px;">
+                <div style="max-width: 50%;">
+                    <h3>Minimalist PDFs</h3>
+                    <p>Includes dark-mode printable templates for those who prefer analog discipline. Perfect for deep work sessions.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border: 1px dashed var(--border);">
+                    <span style="font-size: 0.8rem; color: var(--text-dim);">LIFETIME ACCESS INCLUDED</span>
+                </div>
+            </div>
+        </div>
+
+        <section id="buy" class="pricing">
+            <h2 style="font-size: 1.5rem; opacity: 0.8;">Start Today</h2>
+            <div class="price">₹49<span>/one-time</span></div>
+            <p style="margin-bottom: 32px; color: var(--text-dim);">Instant access to all Sheets and PDF templates.</p>
+            <button onclick="handlePurchase()" class="btn">Buy Now</button>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Self-Discipline System. Minimal. Intentional.</p>
+            <p style="margin-top: 10px;"><a href="mailto:vivekvarma123real@gmail.com">vivekvarma123real@gmail.com</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function handlePurchase() {
+            const checkoutUrl = ""; // Add your payment link here later
+            if(checkoutUrl === "") {
+                alert("Coming Soon! We'll notify you at vivekvarma123real@gmail.com");
+            } else {
+                window.location.href = checkoutUrl;
+            }
+        }
+    </script>
+</body>
+</html>
